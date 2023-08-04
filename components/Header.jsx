@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 
 import Link from 'next/link';
 
-const categories = [{name: 'React', slug: 'react'}, { name: 'Web Development', slug: 'web-dev'}]
+const categories = [{name: 'Random.', slug: 'random'}, { name: 'Health', slug: 'health'}, { name: 'About', slug: 'about'}]
 
 const Header = () => {
   return (
