@@ -9,7 +9,7 @@ const PostCard = ({ post }) => {
   return (
     <div className='bg-sky-950 shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8'>
       <div className='relative overflow-hidden shadow-md pb-80 mb-6'>
-        <Image
+        <img
         src={post.featuredImage.url}
         alt={post.title}
         className='object-center absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg'
@@ -22,7 +22,7 @@ const PostCard = ({ post }) => {
       </h1>
       <div className='block lg:flex text-center items-center justify-center mb-8 w-full'>
         <div className='flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8'>
-          <Image
+          <img
             alt={post.author.name}
             height="10%"
             width="10%"
