@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { getSimilarPosts, getRecentPosts } from '../services';
 
@@ -15,7 +16,7 @@ const PostWidget = ({ categories, slug }) => {
       getRecentPosts()
         .then((result) => setRelatedPosts(result))
     }
-  }, [slug]);
+  }, [categories, slug]);
 
   console.log(relatedPosts)
 
@@ -27,7 +28,7 @@ return (
       {relatedPosts.map((post, index) => (
         <div key={index} className="flex items-center w-full mb-4">
           <div className="w-16 flex-none">
-            <img
+            <Image
               alt={post.title}
               height="60px"
               width="60px"
